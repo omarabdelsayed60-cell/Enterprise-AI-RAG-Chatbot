@@ -1,0 +1,31 @@
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment Variable Credentials
+.env
+
+# Python Cache & Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Local Vector Store Index (Derived search index; automatically rebuilt from SQL Server if missing during deployment)
+faiss_index/
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log Files
+*.log
+
+# OS Generated Files
+Thumbs.db
+.DS_Store
