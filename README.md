@@ -4,6 +4,12 @@ An enterprise-grade, thread-safe Retrieval-Augmented Generation (RAG) assistant 
 
 ---
 
+## 🖼️ Application Interface Preview
+
+![Corporate Policy Assistant UI](assets/screenshots/app_preview.png)
+
+---
+
 ## 🌟 Key Architecture & Highlights
 
 - **Single Source of Truth**: Microsoft SQL Server (`dbo.company_policies` & `dbo.policy_embeddings`) is the single source of truth for all policy content, metadata, and raw vector float arrays.
@@ -56,6 +62,9 @@ sequenceDiagram
 ├── .gitignore              # Excludes .venv, .env, faiss_index/ (rebuilt automatically from SQL)
 ├── README.md               # Project documentation
 ├── app.py                  # Streamlit web interface & UI components
+├── assets/                 # Application screenshots and media assets
+│   └── screenshots/
+│       └── app_preview.png # Application UI screenshot
 ├── config.py               # Central settings, environment variables, & ODBC connection string
 ├── database.py             # SQL Server database query & persistence layer
 ├── db_setup.py             # Database creation, table schema setup, & seed data initialization
